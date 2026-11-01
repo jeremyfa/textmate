@@ -1,0 +1,37 @@
+// The test runners provide these functions without the script declaring them,
+// which must work too
+// @ignore-in-file unknown-function
+
+state
+  val: 0
+  text: ""
+  injected: 0
+
+beat Start
+  // Custom (host-registered) functions receive (interpreter, args):
+  // args arrives as an array, and the interpreter is usable to read/write state.
+
+  // args delivered as an array
+  text = custom_echo("a", "b", "c")
+  echo $text
+  val = custom_arg_count(1, 2, 3, 4)
+  count $val
+
+  // interpreter passed and usable: write then read back runtime state
+  custom_set_state("injected", 42)
+  injected $injected
+  val = custom_get_state("injected")
+  got $val
+
+/*
+<test>
+- expected: |
+    ~ echo a,b,c
+
+    ~ count 4
+
+    ~ injected 42
+
+    ~ got 42
+</test>
+*/

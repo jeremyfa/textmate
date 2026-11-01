@@ -1,0 +1,12 @@
+{
+    "name": "textmate",
+    "url": "https://github.com/microsoft/vscode-textmate",
+    "license": "MIT",
+    "tags": ["textmate", "tmlanguage", "syntax", "highlighting", "tokenizer", "vscode", "cross"],
+    "description": "Pure Haxe port of vscode-textmate 9.2.0, the TextMate grammar tokenizer of Visual Studio Code (grammars, themes, injections, embedded languages).",
+    "version": "0.1.0",
+    "classPath": "src",
+    "releasenote": "Initial port of vscode-textmate 9.2.0.",
+    "contributors": ["jeremyfa"],
+    "dependencies": {}
+}

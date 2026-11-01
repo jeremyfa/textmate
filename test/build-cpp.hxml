@@ -1,0 +1,9 @@
+# Builds the test runner with hxcpp (native executable in bin/cpp)
+# Requires hxcpp: a local repository can be set up in this folder with
+#   haxelib newrepo && haxelib dev hxcpp <path to hxcpp>
+-cp ../src
+-cp ../../oniguruma/src
+-cp src
+-main Main
+-D analyzer-optimize
+-cpp bin/cpp

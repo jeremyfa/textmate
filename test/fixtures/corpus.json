@@ -1,0 +1,461 @@
+{
+  "grammars": {
+    "source.json": "grammars/json.json",
+    "source.js": "grammars/javascript.json",
+    "source.ts": "grammars/typescript.json",
+    "source.hx": "grammars/haxe.json",
+    "source.rust": "grammars/rust.json",
+    "text.html.markdown": "grammars/markdown.json",
+    "text.html.basic": "grammars/html.json",
+    "source.css": "grammars/css.json",
+    "source.yaml": "grammars/yaml.json",
+    "source.shell": "grammars/shellscript.json",
+    "source.loreline": "loreline/loreline.tmLanguage.json"
+  },
+  "themes": {
+    "dark_plus": {
+      "path": "vscode-textmate/themes/dark_plus.json",
+      "include": "vscode-textmate/themes/dark_vs.json"
+    },
+    "monokai": {
+      "path": "vscode-textmate/themes/Monokai.tmTheme"
+    },
+    "one-dark": {
+      "path": "loreline/one-dark-theme.json"
+    },
+    "github-light": {
+      "path": "loreline/github-light-theme.json"
+    }
+  },
+  "cases": [
+    {
+      "name": "json/test.json",
+      "file": "vscode-textmate/themes/tests/test.json",
+      "scopeName": "source.json",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "json/tsconfig.json",
+      "file": "vscode-textmate/themes/tests/tsconfig.json",
+      "scopeName": "source.json",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "json/dark_plus.json",
+      "file": "vscode-textmate/themes/dark_plus.json",
+      "scopeName": "source.json",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "javascript/test.js",
+      "file": "vscode-textmate/themes/tests/test.js",
+      "scopeName": "source.js",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "javascript/test6916.js",
+      "file": "vscode-textmate/themes/tests/test6916.js",
+      "scopeName": "source.js",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "javascript/test.jsx",
+      "file": "vscode-textmate/themes/tests/test.jsx",
+      "scopeName": "source.js",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "javascript/shiki-vscode-textmate.js",
+      "file": "samples/shiki-vscode-textmate.js",
+      "scopeName": "source.js",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "javascript/vscode-textmate-main.min.js",
+      "file": "samples/vscode-textmate-main.min.js",
+      "scopeName": "source.js",
+      "themes": [
+        "dark_plus"
+      ]
+    },
+    {
+      "name": "typescript/test.ts",
+      "file": "vscode-textmate/themes/tests/test.ts",
+      "scopeName": "source.ts",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "typescript/test-function-inv.ts",
+      "file": "vscode-textmate/themes/tests/test-function-inv.ts",
+      "scopeName": "source.ts",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "typescript/test-issue11.ts",
+      "file": "vscode-textmate/themes/tests/test-issue11.ts",
+      "scopeName": "source.ts",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "typescript/test-issue5431.ts",
+      "file": "vscode-textmate/themes/tests/test-issue5431.ts",
+      "scopeName": "source.ts",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "typescript/test-issue5465.ts",
+      "file": "vscode-textmate/themes/tests/test-issue5465.ts",
+      "scopeName": "source.ts",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "typescript/test-issue5566.ts",
+      "file": "vscode-textmate/themes/tests/test-issue5566.ts",
+      "scopeName": "source.ts",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "typescript/test-keywords.ts",
+      "file": "vscode-textmate/themes/tests/test-keywords.ts",
+      "scopeName": "source.ts",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "typescript/test-members.ts",
+      "file": "vscode-textmate/themes/tests/test-members.ts",
+      "scopeName": "source.ts",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "typescript/test-object-literals.ts",
+      "file": "vscode-textmate/themes/tests/test-object-literals.ts",
+      "scopeName": "source.ts",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "typescript/test-strings.ts",
+      "file": "vscode-textmate/themes/tests/test-strings.ts",
+      "scopeName": "source.ts",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "typescript/test-this.ts",
+      "file": "vscode-textmate/themes/tests/test-this.ts",
+      "scopeName": "source.ts",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "typescript/grammar.ts",
+      "file": "samples/grammar.ts",
+      "scopeName": "source.ts",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ],
+      "config": {
+        "initialLanguage": 1,
+        "tokenTypes": {
+          "entity.name.type.instance.jsdoc": 0,
+          "entity.name.function.tagged-template": 0,
+          "meta.import string.quoted": 0,
+          "variable.other.jsdoc": 0,
+          "string.regexp": 3
+        },
+        "balancedBracketSelectors": [
+          "*"
+        ],
+        "unbalancedBracketSelectors": [
+          "meta.tag",
+          "comment"
+        ]
+      }
+    },
+    {
+      "name": "typescript/rule.ts",
+      "file": "samples/rule.ts",
+      "scopeName": "source.ts",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "haxe/Rule.hx",
+      "file": "samples/Rule.hx",
+      "scopeName": "source.hx",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "haxe/TokenizeString.hx",
+      "file": "samples/TokenizeString.hx",
+      "scopeName": "source.hx",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "rust/test.rs",
+      "file": "vscode-textmate/themes/tests/test.rs",
+      "scopeName": "source.rust",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "rust/test-6611.rs",
+      "file": "vscode-textmate/themes/tests/test-6611.rs",
+      "scopeName": "source.rust",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "rust/rope.rs",
+      "file": "samples/rope.rs",
+      "scopeName": "source.rust",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "markdown/test.md",
+      "file": "vscode-textmate/themes/tests/test.md",
+      "scopeName": "text.html.markdown",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "markdown/vscode-textmate-README.md",
+      "file": "samples/vscode-textmate-README.md",
+      "scopeName": "text.html.markdown",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "markdown/markdown-README.md",
+      "file": "samples/markdown-README.md",
+      "scopeName": "text.html.markdown",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ],
+      "config": {
+        "initialLanguage": 1,
+        "embeddedLanguages": {
+          "meta.embedded.block.haxe": 2,
+          "source.hx": 2,
+          "meta.embedded.block.javascript": 3,
+          "source.js": 3
+        }
+      }
+    },
+    {
+      "name": "html/test.html",
+      "file": "vscode-textmate/themes/tests/test.html",
+      "scopeName": "text.html.basic",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "html/12750.html",
+      "file": "vscode-textmate/themes/tests/12750.html",
+      "scopeName": "text.html.basic",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "html/embedded.html",
+      "file": "samples/embedded.html",
+      "scopeName": "text.html.basic",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ],
+      "config": {
+        "initialLanguage": 1,
+        "embeddedLanguages": {
+          "source.css": 2,
+          "source.js": 3,
+          "source.js.embedded.html": 3
+        },
+        "balancedBracketSelectors": [
+          "*"
+        ],
+        "unbalancedBracketSelectors": [
+          "string"
+        ]
+      }
+    },
+    {
+      "name": "css/test.css",
+      "file": "vscode-textmate/themes/tests/test.css",
+      "scopeName": "source.css",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "css/test-variables.css",
+      "file": "vscode-textmate/themes/tests/test-variables.css",
+      "scopeName": "source.css",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "yaml/test.yaml",
+      "file": "vscode-textmate/themes/tests/test.yaml",
+      "scopeName": "source.yaml",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "yaml/issue-1550.yaml",
+      "file": "vscode-textmate/themes/tests/issue-1550.yaml",
+      "scopeName": "source.yaml",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "yaml/issue-4008.yaml",
+      "file": "vscode-textmate/themes/tests/issue-4008.yaml",
+      "scopeName": "source.yaml",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "yaml/issue-6303.yaml",
+      "file": "vscode-textmate/themes/tests/issue-6303.yaml",
+      "scopeName": "source.yaml",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "yaml/pnpm-lock.yaml",
+      "file": "samples/pnpm-lock.yaml",
+      "scopeName": "source.yaml",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "shell/test.sh",
+      "file": "vscode-textmate/themes/tests/test.sh",
+      "scopeName": "source.shell",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "shell/perltest.sh",
+      "file": "samples/perltest.sh",
+      "scopeName": "source.shell",
+      "themes": [
+        "dark_plus",
+        "monokai"
+      ]
+    },
+    {
+      "name": "loreline-syntax",
+      "dir": "loreline/test-syntax",
+      "ext": ".lor",
+      "scopeName": "source.loreline",
+      "themes": [
+        "one-dark",
+        "github-light"
+      ],
+      "stripAssertions": true
+    },
+    {
+      "name": "loreline-test",
+      "dir": "loreline/test",
+      "ext": ".lor",
+      "scopeName": "source.loreline",
+      "themes": [
+        "one-dark",
+        "github-light"
+      ]
+    }
+  ]
+}

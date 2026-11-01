@@ -1,0 +1,74 @@
+// Constructs that get decorations on top of the grammar: text,
+// plural pipes, choice options, once-only options and when rules played once. The report shows them
+// with those decorations, the assertions check the grammar underneath.
+
+state
+  count: 3
+
+beat Start
+  $count drink|drinks
+//^ punctuation.definition.block.begin
+// ^^^^^ variable.other
+//       ^^^^^^^^^^^^ string.unquoted
+
+  $count (cold drink|cold drinks) left
+//       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.unquoted
+
+  $count plik|pliki|plików, then «$count cat|cats».
+//       ^^^^^^^^^^^^^^^^^^^^^^^^ string.unquoted
+
+  $count (apple|apples|3:many apples), and <$count>(one|2:a few|5:many) unseen
+//       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.unquoted
+
+  $count (plik|pliki|plików|10: mnóstwo plików|100:całe góry plików)
+//       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.unquoted
+
+  $count (2:a few|12:a dozen or so) left, but (\10:30 slot|\10:30 slots) stays text
+//       ^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.unquoted
+
+  You see <$count>(an apple|some apples|3:many apples) and <b>$count coin|coins</b>.
+//       ^ string.unquoted
+
+  $plural(count, "an apple", "some apples", 3, "many apples")
+
+  "Quoted narration, with $count items."
+//^^^^^^^^^^^^^^^^^^^^^^^ string.quoted.double
+//                         ^^^^^ variable.other
+
+  A long line of narration that goes on and on, long enough to wrap in the report, so that its continuation lines show the hanging indent.
+//^^^^^^^^^^^ string.unquoted
+  choice
+    - Ask once
+//  ^^^^^^^^^^ string.unquoted
+      Asked.
+    Leave if count > 1
+//  ^^^^^ string.unquoted
+//        ^^ keyword.control
+      Left.
+  when
+    count > 2 and count < 10 // many
+//  ^^^^^ variable.other
+//            ^^^ keyword.control
+//                           ^^^^^^^ comment.line.double-slash
+      Quite a few.
+//    ^^^^^^^^^^^^ string.unquoted
+    - count is 1
+//  ^ keyword.control.once
+//    ^^^^^ variable.other
+      Just one, said once.
+//    ^^^^^^^^^^^^^^^^^^^^ string.unquoted
+    + Rumors if count > 5
+//    ^^^^^^ entity.name.type.beat
+    - true {
+//    ^^^^ constant.language
+      Once, whatever the count.
+    }
+    true
+//  ^^^^ constant.language
+      Some.
+//    ^^^^^ string.unquoted
+
+beat Rumors
+  when
+    true
+      Rumors.

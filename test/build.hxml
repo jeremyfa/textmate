@@ -1,0 +1,7 @@
+# Builds the test runner to JavaScript (run it with node, see run.sh)
+-cp ../src
+-cp ../../oniguruma/src
+-cp src
+-main Main
+-D analyzer-optimize
+-js bin/test.js
