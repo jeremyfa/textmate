@@ -296,9 +296,9 @@ class RegexSource {
 
 class CachedFn<TValue> {
     final cache = new StringMap<TValue>();
-    final fn:String->TValue;
+    final fn:(String) -> TValue;
 
-    public function new(fn:String->TValue) {
+    public function new(fn:(String) -> TValue) {
         this.fn = fn;
     }
 

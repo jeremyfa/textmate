@@ -4,7 +4,7 @@
 
 package textmate;
 
-typedef Matcher<T> = T->Bool;
+typedef Matcher<T> = (T) -> Bool;
 
 class MatcherWithPriority<T> {
     public final matcher:Matcher<T>;

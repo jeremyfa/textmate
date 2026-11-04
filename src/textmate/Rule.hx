@@ -17,7 +17,7 @@ typedef RuleId = Int;
 
 interface IRuleRegistry {
     function getRule(ruleId:RuleId):Rule;
-    function registerRule<T:Rule>(factory:RuleId->T):T;
+    function registerRule<T:Rule>(factory:(RuleId) -> T):T;
 }
 
 interface IGrammarRegistry {

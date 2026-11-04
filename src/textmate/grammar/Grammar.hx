@@ -257,7 +257,7 @@ class Grammar implements IGrammar implements IRuleFactoryHelper implements IRule
         return _injections;
     }
 
-    public function registerRule<T:Rule>(factory:RuleId->T):T {
+    public function registerRule<T:Rule>(factory:(RuleId) -> T):T {
         var id = ++_lastRuleId;
         var result = factory(Rules.ruleIdFromNumber(id));
         _ruleId2desc[id] = result;

@@ -31,7 +31,7 @@ class T {
         return filter == null || (currentSuite + ' ' + name).indexOf(filter) != -1;
     }
 
-    public static function test(name:String, fn:Void->Void):Void {
+    public static function test(name:String, fn:() -> Void):Void {
         if (!enabled(name)) {
             return;
         }
